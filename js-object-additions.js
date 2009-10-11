@@ -46,6 +46,13 @@ CanvasRenderingContext2D.prototype.setTranslation = function(pos) {
   this.translate(pos.x, pos.y);
 };
 
+// Clear the canvas, but maintain translation
+CanvasRenderingContext2D.prototype.clear = function() {
+  var pos = this.translation.clone();
+  this.canvas.width = this.canvas.width;
+  this.setTranslation(pos);
+};
+
 CanvasRenderingContext2D.prototype.drawText = function(pos, s, sFont, sColour) {
   this.font = sFont;
   this.fillStyle = sColour;
