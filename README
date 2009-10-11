@@ -1,0 +1,14 @@
+HTML5 Canvas
+==========================
+
+- CanvasMenu: implements drawing and event handling for context menus in HTML5 canvas elements.
+
+Installation
+============
+Dependencies:
+
+Examples
+========
+See the 'examples' directory.
+
+Copyright (c) 2009 Joe Yates, released under the MIT license
