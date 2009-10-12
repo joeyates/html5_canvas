@@ -35,6 +35,7 @@ Canvas.ContextMenu = function(ctx, items, options) {
   // In order to erase the menu: Save the canvas image before showing the menu, and restore it afterwards
   var imd = null;
   var save = function() {
+    restore();
     imd = ctx.getImageData(0, 0, ctx.canvas.width, ctx.canvas.height);
   };
   var restore = function() {
