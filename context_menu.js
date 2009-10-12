@@ -42,6 +42,7 @@ Canvas.ContextMenu = function(ctx, items, options) {
     if(imd == null)
       return;
     ctx.putImageData(imd, 0, 0);
+    imd = null;
   };
 
   this.show = function(evt) {
