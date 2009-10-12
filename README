@@ -2,6 +2,7 @@ HTML5 Canvas
 ==========================
 
 - CanvasMenu: implements drawing and event handling for context menus in HTML5 canvas elements.
+- Draggable: allows dragging of the canvas image.
 
 Installation
 ============
