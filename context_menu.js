@@ -3,6 +3,7 @@ Canvas.MenuItem = function(text, fn) {
   this.text = text;
   this.fn = fn;
 };
+
 Canvas.ContextMenu = function(ctx, items, options) {
   // Private variables
   var self = this;
@@ -61,9 +62,9 @@ Canvas.ContextMenu = function(ctx, items, options) {
     return false;
   };
   if(bAutomatic)
-    ctx.canvas.oncontextmenu = this.show
+    ctx.canvas.oncontextmenu = this.show;
   else // Stop the default context menu from appearing
-    ctx.canvas.oncontextmenu = function() { return false; }
+    ctx.canvas.oncontextmenu = function() { return false; };
 
   this.hide = function() {
     rct = null;
